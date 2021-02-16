@@ -55,10 +55,10 @@
         <tbody>
         <?php
 
-$server="localhost";
-$username="root";
-$password="";
-$dbname="bank";
+$server="remotemysql.com";
+$username="nULsVEaa2s";
+$password="sWgJyMr4iM";
+$dbname="nULsVEaa2s";
 
 $conn=mysqli_connect($server,$username,$password,$dbname);
 
