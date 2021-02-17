@@ -68,12 +68,13 @@ if($conn->connect_error){
 }
 
 
-            $sql ="select * from transaction";
+            $sql ="select * from transactions";
 
             $query =mysqli_query($conn, $sql);
 
             while($rows = mysqli_fetch_assoc($query))
             {
+              
         ?>
 
             <tr>

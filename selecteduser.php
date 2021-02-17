@@ -68,13 +68,18 @@ if(isset($_POST['submit']))
                 $newbalance = $sql2['Current_balance'] + $amount;
                 $sql = "UPDATE users set Current_balance=$newbalance where id=$to";
                 mysqli_query($conn,$sql);
+               
                 
                 $sender = $sql1['Name'];
                 $receiver = $sql2['Name'];
-                $sql = "INSERT INTO transaction(`sender`, `receiver`, `balance`) VALUES ('$sender','$receiver','$amount')";
+                $sql = "INSERT INTO transactions(sender, receiver, balance) VALUES ('$sender','$receiver','$amount')";
+               
+                mysqli_query($conn,$sql);
+
                 $query=mysqli_query($conn,$sql);
 
                 if($query){
+                
                      echo "<script> alert('Transaction Successful');
                                      window.location='transactionhistory.php';
                            </script>";
