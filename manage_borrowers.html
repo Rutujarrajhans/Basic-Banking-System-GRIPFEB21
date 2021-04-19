@@ -1,0 +1,425 @@
+<html>
+    <head>
+<style>
+	*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url("https://www.business.com/images/content/5ca/3e1aa5a215e8a458bb313/1500-0-");
+   
+    background-position: center;
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 40px;
+    
+   
+}
+.reg{
+    width:800px;
+    background-color: rgb(0,0,0,0.6);
+    margin:auto;
+    color: #ffffff;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    margin-left:10px;
+}
+.main{
+    background-color: rgb(0,0,0,0.5)
+    ;
+    float: left;
+    display: flex;
+    width:800px;
+    margin:auto;
+    margin-left:10px;
+
+}
+form{
+    padding: 10px;
+}
+#name{
+    width: 100%;
+    height: 100px;
+}
+.name{
+    margin-left: 25px;
+    margin-top: 30px;
+width: 125px;
+color:white;
+font-size: 18px;
+font-weight: 700;}
+.firstname{
+    position: relative
+    ;
+    left: 200px;
+    top:-37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.lastname{
+    position: relative;
+    left: 78%;
+    top:-80px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color:#555;
+    
+}
+.firstlabel{
+    position: relative;
+    color: #E5E5E5;
+    text-transform:capitalize;
+    font-size: 14px;
+    left:203px;
+    top:-45px;
+}
+.lastlabel{
+    position: relative;
+    color: #E5E5E5;
+    text-transform:capitalize;
+    font-size: 14px;
+    left:492px;
+    top:-76px;
+}
+.company{
+    position: relative;
+    left:200px;
+    top:-37px;
+    line-height: 40px;
+    width:480px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color:#555;
+}
+.email{
+    position: relative;
+    left:200px;
+    cursor: pointer;
+    top:-37px;
+    line-height: 40px;
+    width:480px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color:#555;
+}
+.code{
+    position: relative;
+    left:200px;
+    top:-37px;
+    line-height: 40px;
+    width:95px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color:#555;
+}
+.number{
+    position: relative;
+    left:200px;
+    top:-37px;
+    line-height: 40px;
+    width:255px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color:#555;
+}
+.area-code{
+    position: relative;
+    color: #E5E5E5;
+    text-transform:capitalize;
+    font-size: 16px;
+    left:54px;
+    top:-4px; 
+}
+.phone-number{
+    position: relative;
+    color: #E5E5E5;
+    text-transform:capitalize;
+    font-size: 16px;
+    left:-100px;
+    top:-2px; 
+}
+.option{
+    position: relative;
+    left:200px;
+    top:-37px;
+    line-height: 40px;
+    width:532px;
+    height:40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color:#555;
+    outline:none;
+    overflow: hidden;
+}
+.option option{
+    font-size: 20px;
+}
+#student{
+    margin-left: 25px;
+    color:white;
+    font-size:18px;
+}
+.radio{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 25px;
+    padding-right: 70px;
+    font-size: 25px;
+    color: white;
+}
+.radio input{
+    width: 20px;
+    height: 20px;
+    border-radius:50% ;
+    cursor: pointer;
+    outline: none;
+}
+.button{
+    background-color: #3BAF9F;
+    display: block;
+    margin:20px 0px;
+    text-align: center;
+    text-shadow: #555;
+    -moz-text-size-adjust: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius:12px ;
+    border: 2px solid #366473;
+    padding: 14px 110px;
+    margin-left:234px;
+   
+    color: white;
+    cursor: pointer;
+
+    transition: 0.25px;
+    outline: none;
+}
+.button:hover{
+    background: #5390F5;
+}
+.bid{
+    position: relative;
+    left:200px;
+    top:-37px;
+    line-height: 40px;
+    width:100px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color:#555;
+}
+.start{
+    position: relative;
+    left:200px;
+    top:-37px;
+    line-height: 40px;
+    width:200px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color:#555;
+}
+.end{
+    position: relative;
+    left:200px;
+    top:-37px;
+    line-height: 40px;
+    width:200px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color:#555;
+}
+.file{
+    position: relative;
+    left:200px;
+    top:-37px;
+    line-height: 40px;
+    width:200px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+.cont{
+    
+   position: relative;
+    margin:0px;
+    width:610px;
+    float: right;
+  }
+  
+  .image {
+    
+    margin-right: 0px;
+        width: 100%;
+        height: auto;
+    display: block;
+   
+    transition: .5s ease;
+    
+  }
+  
+  .middle{
+    transition: .5s ease;
+    opacity: 0;
+   position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .cont:hover .image {
+    opacity: 0.3;
+  }
+  
+  .cont:hover .middle{
+    opacity: 1;
+    margin-left: 410px;
+    margin-right: 10px;
+  }
+  
+  .text {
+    background-color: #d82d2d;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+  @media screen and (max-width: 500px) {
+    .name,.firstname,.firstlabel,.radio-one,.lastlabel,.company,.email,.code,.number,.area-code,.phone-number,.option,.option option,
+    .radio,.radio input,.button,.sart,.end,.bid ,.cont,.file,.input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+      height: auto;
+
+    }
+  }
+  .navbar {
+  
+    margin-left: 0%;
+    background-color:#08233b;
+    overflow: auto;
+    height: 75px;
+    margin-top: -2%;
+    width:100%;
+    height: auto;
+    
+  }
+  
+  .navbar a {
+    float: right;
+    
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 22px;
+    padding-bottom: 25px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  .active {
+    background-color: #474338;
+  }
+  
+  @media screen and (max-width: 200px) {
+    .navbar a {
+      float: none;
+      display: block;
+      padding-top: 15px;
+    }
+
+  }
+  #nav-bar
+{
+	background-color:#75808a;
+	position: sticky;
+	top:0;
+	z-index:10;
+	float: right;
+}
+.nav-link:hover{
+    background-color:black;
+}
+.navbar
+{
+	
+    padding: 0 !important;
+}
+navbar-brand img
+{
+	height:40px;
+	padding-left:20px;
+}
+.navbar-nav li
+{
+	padding: 0 10px;
+}
+.navbar-nav li a
+{
+color:#fff !important;
+font-size: 21px;
+float:right;
+text-align:left;
+}
+.fa-bars
+{
+	color:#fff;
+	font-size:30p !important;
+}
+.navbar-toggler
+{
+	outline:none !important;
+}
+/*---banner section--*/
+  
+
+	</style>
+</head>
+<body>
+
+			<div class="reg" style="text-align:center;margin-left:380px;"><h1>Borrower Registration</h1></div>
+    <div class="main"style="margin-left:380px;">
+        <form action="bank/new.php" method="POST">
+            <div id="name">
+                <h2 class="name">Name</h2>
+                <input class="firstname" type="text" name="first_name"><br>
+                <label class="firstlabel">FirstName</label>
+               
+                <input  class="lastname" type="text" name="last_name"><br>
+                <label   class="lastlabel">Lastname</label>
+
+                </div>
+                <h2 class="name">ADDRESS</h2>
+                <input class="company" type="text" name="company">
+                <h2 class="name">Contact Number</h2>
+                <input class="company" type="text" name="mn">
+                <h2 class="name">EMAIL ID</h2> 
+                <input class="email" type="text" name="email">
+                <h2 class="name">Tax_id</h2>
+                <input class="company" type="text" name="model"><br>
+               
+			<button type="submit" name="submit" style="border-radius: .10rem;margin-left:300px;
+      background-color: #5a6f83;
+      border-width: 5px;
+      border-color: black;
+      font-size: 30px;"class="btn btn-dark btn-lg download-button"></i>SUBMIT</button></a>
+		</form>
+	</div>
+</div>
+</body>
+</html>
