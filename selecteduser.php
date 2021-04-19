@@ -151,10 +151,10 @@ body{
 	<div class="container">
         <h2 class="text-center pt-4">Transaction</h2>
             <?php
-              $server="localhost";
-              $username="root";
-              $password="";
-              $dbname="bank";
+            $server="remotemysql.com";
+		$username ="KtFn8Akxrf";
+		$password ="PfsUZWV9fc";
+		$dbname = "KtFn8Akxrf";
               
               $conn=mysqli_connect($server,$username,$password,$dbname);
               
@@ -198,10 +198,10 @@ body{
         <select name="to" class="form-control" required>
             <option value="" disabled selected>Choose</option>
             <?php
-               $server="remotemysql.com";
-               $username="nULsVEaa2s";
-               $password="sWgJyMr4iM";
-               $dbname="nULsVEaa2s";
+              $server="remotemysql.com";
+$username ="KtFn8Akxrf";
+$password ="PfsUZWV9fc";
+$dbname = "KtFn8Akxrf";
                
                $conn=mysqli_connect($server,$username,$password,$dbname);
                
