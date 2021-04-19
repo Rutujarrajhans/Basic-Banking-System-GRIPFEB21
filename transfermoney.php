@@ -26,10 +26,10 @@
 
 <body>
 <?php
- $server="remotemysql.com";
- $username="nULsVEaa2s";
- $password="sWgJyMr4iM";
- $dbname="nULsVEaa2s";
+ $server="localhost";
+ $username="root";
+ $password="";
+ $dbname="bank";
  $conn=mysqli_connect($server,$username,$password,$dbname);
  
  if($conn->connect_error){
