@@ -54,10 +54,10 @@
         <tbody>
         <?php
 
-$server="localhost";
-$username="root";
-$password="";
-$dbname="bank";
+$server="remotemysql.com";
+$username ="KtFn8Akxrf";
+$password ="PfsUZWV9fc";
+$dbname = "KtFn8Akxrf";
 
 $conn=mysqli_connect($server,$username,$password,$dbname);
 
